@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -13,8 +13,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- Custom styles for this template -->
+
+  
   <link href="style1.css" rel="stylesheet">
 </head>
 
@@ -43,27 +47,43 @@
         </ul>
       </nav>
     </header>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="img/back.webp" alt="Primeiro Slide">
+    <div class="container">
+        <h2>Carousel Example</h2>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/back.webp" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="img/bb.jpg" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="img/kd.jpg" alt="New york" style="width:100%;">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/bb.jpg" alt="Segundo Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="img/kd.jpg" alt="Terceiro Slide">
-          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
       </div>
+      
 
     <div class="row">
       <div class="col-md-4">
@@ -71,7 +91,7 @@
           <img class="card-img-top" src="img/bb.jpg" alt="Card image">
           <div class="card-body">
             <h4 class="card-title">Edward Newgate</h4>
-            <p class="card-text">O homem mais fortes do mundo</p>
+            
             <a href="#" class="btn btn-secondary">O homem mais fortes do mundo</a>
           </div>
         </div>
@@ -81,7 +101,7 @@
           <img class="card-img-top" src="img/kd.jpg" alt="Card image" >
           <div class="card-body">
             <h4 class="card-title">Kaidou</h4>
-            <p class="card-text">Engenheira.</p>
+           
             <a href="#" class="btn btn-secondary">A criatura mais forte do mundo</a>
           </div>
         </div>
