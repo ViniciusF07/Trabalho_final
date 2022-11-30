@@ -1,0 +1,33 @@
+body{
+    background-color: gray;
+    margin: 10px;
+    margin-top: 5%;
+    margin-right: 19%;
+    margin-left: 20%;
+}
+
+.container{
+    background-color: white;
+    background-image: url('img/');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+.card-title {
+    border-bottom: 1px dotted gray;
+  }
+  
+.row  {
+    margin: 10px;
+  }
